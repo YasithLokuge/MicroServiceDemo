@@ -25,7 +25,12 @@ cd target
 java -jar MicroServiceDemo-0.1-SNAPSHOT.jar
 ```
 
-(4) Navigate to `http://localhost:8081/service` on a web browser or execute the following command
+(4) GET method Invokation : Navigate to `http://localhost:8081/service` on a web browser or execute the following command
 ```
 curl -v http://localhost:8081/service
+```
+
+(5)POST method Invokation : Execute the following command in terminal
+```
+curl -X POST -H "Content-Type: application/json" -d '{ "name": "yasith", "age": "25", "height": "6" }' "http://localhost:8081/service"
 ```
