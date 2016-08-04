@@ -1,6 +1,4 @@
 /*
- * Copyright (c) 2016, WSO2 Inc. (http://wso2.com) All Rights Reserved.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -34,30 +32,28 @@ public class DemoService {
 
     @GET
     @Path("/")
-    public String get() {
-        // TODO: Implementation for HTTP GET request
+    public String get() {       
         System.out.println("GET invoked");
-        return "Hello from WSO2 MSF4J";
+        return "MicroServiceDemo GET invoked";
     }
 
     @POST
     @Path("/")
-    public void post() {
-        // TODO: Implementation for HTTP POST request
+    public String post(Data data) {        
         System.out.println("POST invoked");
+        System.out.println(data.getName());        
+        return "POST invoked successfully, data received : \r\n name : " + data.getName() + "\r\n age : " + data.getAge() + "\r\n height : " + data.getHeight();
     }
 
     @PUT
     @Path("/")
-    public void put() {
-        // TODO: Implementation for HTTP PUT request
+    public void put() {        
         System.out.println("PUT invoked");
     }
 
     @DELETE
     @Path("/")
-    public void delete() {
-        // TODO: Implementation for HTTP DELETE request
+    public void delete() {        
         System.out.println("DELETE invoked");
     }
 }
