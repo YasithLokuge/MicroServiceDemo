@@ -1,5 +1,7 @@
 # MicroServiceDemo
 
+**Licensed under the [Apache License](http://www.apache.org/licenses/LICENSE-2.0) , Version 2.0**
+
 ### Prerequisites
 
 - **Java 8 (JDK)**
