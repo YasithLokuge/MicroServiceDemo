@@ -1,5 +1,12 @@
 # MicroServiceDemo
 
+### Prerequisites
+
+- **Java 8 (JDK)**
+
+- **Maven 3.0.5 or above**
+
+
 (1) Execute the following command in the terminal
 
 ```
@@ -13,7 +20,7 @@ cd target
 ```
 (5) Execute the following command to start the server
 ```
-java -jar MicroServiceDemo.jar
+java -jar MicroServiceDemo-0.1-SNAPSHOT.jar
 ```
 
 (4) Navigate to `http://localhost:8081/service` on a web browser or execute the following command
